@@ -7,6 +7,7 @@ import {
   sendEmailVerification,
 } from "firebase/auth";
 import { collection, addDoc } from "firebase/firestore";
+import styles from "../styles/RegisterStyles";
 
 const Register = () => {
   const [firstName, setFirstName] = useState("");
@@ -86,25 +87,5 @@ const Register = () => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    padding: 20,
-  },
-  title: {
-    fontSize: 24,
-    marginBottom: 20,
-    textAlign: "center",
-  },
-  input: {
-    borderWidth: 1,
-    borderColor: "gray",
-    marginBottom: 10,
-    padding: 10,
-    borderRadius: 5,
-  },
-});
 
 export default Register;
