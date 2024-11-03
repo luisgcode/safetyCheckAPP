@@ -223,7 +223,9 @@ const Login = ({ navigation }) => {
               </View>
             )}
             <TouchableOpacity style={styles.button} onPress={loadContacts}>
-              <Text style={styles.buttonText}>Load Contacts</Text>
+              <Text style={styles.buttonText}>
+                Load Contacts from My Contact List
+              </Text>
             </TouchableOpacity>
             <TouchableOpacity
               style={[
@@ -233,7 +235,7 @@ const Login = ({ navigation }) => {
               onPress={sendSMS}
               disabled={selectedContacts.length === 0}
             >
-              <Text style={styles.buttonText}>Send SMS</Text>
+              <Text style={styles.buttonText}>Send SMS with Coordinates</Text>
             </TouchableOpacity>
             <TouchableOpacity
               style={[styles.button, !location && styles.disabledButton]}
