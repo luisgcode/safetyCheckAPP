@@ -1,4 +1,5 @@
 {
+  "homepage": "http://luisgcode.github.io/safetyCheckAPP",
   "name": "lab-five",
   "version": "1.0.0",
   "main": "expo/AppEntry.js",
@@ -6,7 +7,9 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.24.0",
@@ -15,26 +18,27 @@
     "@react-navigation/native-stack": "^6.11.0",
     "@types/react": "~18.2.79",
     "expo": "~51.0.28",
+    "expo-camera": "~15.0.16",
     "expo-contacts": "~13.0.5",
+    "expo-image-picker": "~15.0.7",
     "expo-location": "~17.0.1",
+    "expo-mail-composer": "~13.0.1",
     "expo-sms": "~12.0.1",
     "expo-status-bar": "~1.12.1",
     "firebase": "^10.14.1",
     "react": "18.2.0",
     "react-native": "0.74.5",
     "react-native-gesture-handler": "^2.20.0",
+    "react-native-maps": "1.14.0",
     "react-native-reanimated": "^3.16.0",
     "react-native-safe-area-context": "^4.11.1",
     "react-native-screens": "^3.34.0",
-    "typescript": "~5.3.3",
-    "expo-mail-composer": "~13.0.1",
-    "react-native-maps": "1.14.0",
-    "expo-camera": "~15.0.16",
-    "expo-image-picker": "~15.0.7"
+    "typescript": "~5.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
-    "@types/react-native": "^0.73.0"
+    "@types/react-native": "^0.73.0",
+    "gh-pages": "^6.2.0"
   },
   "private": true
 }
